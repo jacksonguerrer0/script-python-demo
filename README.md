@@ -7,14 +7,19 @@ A Python script that automatically increments a number in a text file, commits t
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/Shogun89/fancy_job
-cd fancy_job
+git clone https://github.com/jacksonguerrer0/script-python-demo.git
+cd script-python-demo
 ```
 
 2. Run the script manually for the first time to verify it works and to set the cron job:
 
 ```bash
 python update_number.py
+```
+
+or
+```bash
+python3 update_number.py
 ```
 
 Optional: If you prefer to ensure the script runs at a fixed time initially, you can manually set up a cron job:
@@ -26,7 +31,7 @@ crontab -e
 Add the following line to the crontab file:
 
 ```bash
-0 6 * * * cd /path/to/your/repo && python update_number.py
+0 6 * * * cd /path/to/your/repo && python3 update_number.py
 ```
 
 This will initially run the script at 6am the next day.
@@ -36,5 +41,3 @@ This will initially run the script at 6am the next day.
 The script will increment the number in `number.txt` and commit the change to git. You can modify the script to increment by any value or use a different file to store the number.
 
 By running this you will be able get a fancy streak on your github profile and get a job.
-
-![How to get a job](get_a_job.jpg)
